@@ -1,0 +1,34 @@
+{
+  "name": "wbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --no-warnings ./node_modules/@cucumber/cucumber/bin/cucumber-js",
+    "test:ui": "node --no-warnings ./node_modules/@cucumber/cucumber/bin/cucumber-js --tags @ui",
+    "test:api": "node --no-warnings ./node_modules/@cucumber/cucumber/bin/cucumber-js --tags @api",
+    "test:booking": "node --no-warnings ./node_modules/@cucumber/cucumber/bin/cucumber-js --tags @booking",
+    "test:contact": "node --no-warnings ./node_modules/@cucumber/cucumber/bin/cucumber-js --tags @contact",
+    "test:navigation": "node --no-warnings ./node_modules/@cucumber/cucumber/bin/cucumber-js --tags @navigation",
+    "test:booking": "node --no-warnings ./node_modules/@cucumber/cucumber/bin/cucumber-js --tags @booking",
+    "test:admin": "node --no-warnings ./node_modules/@cucumber/cucumber/bin/cucumber-js --tags @admin",
+    "test:location": "node --no-warnings ./node_modules/@cucumber/cucumber/bin/cucumber-js --tags @location",
+    "test:login": "node --no-warnings ./node_modules/@cucumber/cucumber/bin/cucumber-js --tags @login",
+    "test:validlogin": "node --no-warnings ./node_modules/@cucumber/cucumber/bin/cucumber-js --tags @validLogin",
+    "report": "node report.js",
+    "generate-report": "node report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.60.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "multiple-cucumber-html-reporter": "^3.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}

@@ -1,0 +1,20 @@
+# Test reports - don't push these
+reports/
+
+# Node/React/Vue projects
+node_modules/
+dist/
+build/
+.next/
+
+# Environment files - contains secrets
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS junk
+.DS_Store
+Thumbs.db
