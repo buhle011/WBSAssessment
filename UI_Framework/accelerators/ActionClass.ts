@@ -73,57 +73,7 @@ export class ActionClass {
   }
   }
 
-// Function to click radio button 
-  async clickRadioButtton(locator: string, elementName: string): Promise<boolean> {
-    try {
-      const element = this.page.locator(locator);
-
-      await expect(element).toBeVisible();
-
-      await element.click();
-      console.log(`Clicked on ${elementName} radio button`);
-      return true;  
-
-       } catch (error) {
-      console.error(`Failed to click on ${elementName}`, error);
-      throw error; 
-    }
-  }  
-  
-  // Function to click checkbox
-  async clickCheckBox(locator: string, elementName: string): Promise<boolean> {
-    try {
-      const element = this.page.locator(locator);                       
-
-      await expect(element).toBeVisible();
-
-      await element.click();
-      console.log(`Clicked on ${elementName} checkbox`);
-      return true;    
-  } catch (error) {
-      console.error(`Failed to click on ${elementName}`, error);
-      throw error; 
-    }
-  }
-
-// Function to select dropdown value
-  async selectDropdownValue(locator: string, value: string, elementName: string): Promise<boolean> {
-    try {
-      const element = this.page.locator(locator);
-      await expect(element).toBeVisible();
-      await element.selectOption(value);
-      console.log(`Selected value '${value}' in ${elementName} dropdown`);
-      return true;
-    } catch (error) {
-      console.error(`Failed to select value in ${elementName} dropdown`, error);
-      throw error;
-    }
-  }
-  // Function to get the page object
-  getPage(): Page {
-    return this.page;
-  }
-
+ 
   // Function to verify element text
   async verifyElementIsVisible(locator: string, expectedText: string, elementName: string): Promise<boolean> {
     try {       
